@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <meta
+      name="description"
+      content="Welcome to my portfolio website. I am a Computer Science and Mathematics student at DePauw University, passionate about Software Development."
+    />
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Nguyen Bui's Portfolio">
+    <meta itemprop="description" content="Welcome to my portfolio website. I am a Computer Science and Mathematics student passionate about Software Development.">
+
+    <meta itemprop="image" content="assets/images/sharing-card.png">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://ossportfolio.netlify.app">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nguyen Bui's Portfolio">
+    <meta property="og:description" content="Welcome to my portfolio website. I am a Computer Science and Mathematics student passionate about Software Development.">
+
+    <meta property="og:image" content="assets/images/sharing-card.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nguyen Bui's Portfolio">
+    <meta name="twitter:description" content="Welcome to my portfolio website. I am a Computer Science and Mathematics student passionate about Software Development.">
+    <meta name="twitter:image" content="assets/images/sharing-card.png">
+
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicons.png"
+      type="image/png"
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <title>Nguyen Bui's Portfolio</title>
+  </head>
+
+  <body>
+
+    <script>
+      const theme = localStorage.getItem("theme") || "dark";
+      document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+      <div class="menu-btn-container">
+        <div class="container">
+          <button type="button" class="menu-btn">menu</button>
+        </div>
+      </div>
+
+      <nav class="nav hidden">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#work">My Work</a></li>
+          <li class="nav-item"><a href="#experience">Experience</a></li>
+          <li class="nav-item"><a href="#education">Education</a></li>
+          <li class="nav-item"><a href="#activities">Activities</a></li>
+          <li class="nav-item"><a href="#skills">My Skills</a></li>
+          <li class="nav-item"><a href="#contact" data-focused="last-focused">Contact</a></li>
+        </ol>
+      </nav>
+
+      <div class="container">
+        <div class="header-textbox">
+          <h1 class="h1">
+            <span>Hello, I'm Nguyen Bui</span>
+            <span>Computer Science and Mathematics Student</span>
+          </h1>
+          <p class="header-text">
+            Looking for a Software Engineer Internship.
+          </p>
+
+          <div class="header-btns">
+            <a href="#contact" class="btn btn-cta">Contact me</a>
+            <a href="#work" class="btn btn-secondary">See my work</a>
+            <!-- Link to resume -->
+            <a href="assets/NGUYEN BUI.pdf" target="_blank" class="btn btn-secondary">View my Resume</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Projects Section -->
+      <section class="work">
+        <div class="container">
+          <h2 class="h2" id="work">Selected Work</h2>
+          <div class="work-boxes">
+            <div class="work-box">
+              <div class="work-textbox">
+                <h3 class="h3">Graphics Space Station Satellite Rescue Simulator</h3>
+                <p class="work-text">
+                  A Java-based space shuttle simulation game with realistic orbital mechanics and interactive gameplay.
+                </p>
+                <ol class="work-technologies">
+                  <li>Java</li>
+                  <li>BlueJ</li>
+                  <li>AWT</li>
+                </ol>
+                
+              </div>
+            <picture class="work-img">
+              <video width="100%" controls>
+                <source src="assets/images/work/Graphics_Space_Station_Satellite_Rescue_Simulator.mp4" type="video/mp4">
+                
+              </picture>
+            </div>
+
+            <div class="work-box">
+              <div class="work-textbox">
+                <h3 class="h3">Tiger Cub - TigerHacks Hackathon</h3>
+                <p class="work-text">Comprehensive platform for DePauw students and faculty, facilitating communication and interactive gaming.</p>
+                <ol class="work-technologies">
+                  <li>HTML/CSS</li>
+                  <li>JavaScript</li>
+                </ol>
+              </div>
+              <picture class="work-img">
+                <video width="100%" controls>
+                  <source src="assets/images/work/Tiger_Cub.mp4" type="video/mp4">
+              </picture>
+            </div>
+
+            <div class="work-box">
+              <div class="work-textbox">
+                <h3 class="h3">Unistroke Character Recognition</h3>
+                <p class="work-text">Handwriting character recognition system using image processing techniques to analyze handwritten input.</p>
+                <ol class="work-technologies">
+                  <li>Java</li>
+                  <li>BlueJ</li>
+                </ol>
+              <!--  <div class="work-links">
+                  <a href="#" target="_blank" rel="noopener" class="link">Explore this project</a>
+                  <a href="#" target="_blank" rel="noopener" title="Source code">
+                    <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                  </a>
+                </div> -->
+              </div>
+              <picture class="work-img">
+                <img loading="lazy" src="assets/images/work/Unistroke_Character_Regconition.mp4" alt="Unistroke Character Recognition" />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Achievements Section -->
+      <section class="achievements">
+        <div class="container">
+          <h2 class="h2" id="achievements">Achievements</h2>
+          <div class="achievements-item">
+            <h3 class="h3">WiCyS 2025 Conference Scholarship Recipient</h3>
+            <p class="achievements-text">Women in Cybersecurity (WiCyS) Annual Conference (December 2024) </p>
+            <ul>
+              <li>Selected from over 2000 applicants to receive scholarship for the prestigious WiCyS 2025 Conference
+</li>
+            </ul>
+          </div>
+          <div class="achievements-item">
+            <h3 class="h3">ICMC Second Place</h3>
+            <p class="achievements-text">The Indiana Collegiate Maths Competition (ICMC) - Mathematical Association of Americas (April 2024)</p>
+            <ul>
+              <li>Leader of DePauw’s team that secured 2nd place among 28 teams from 12 different prestigious institutions</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      
+      <section class="experience">
+        <div class="container">
+          <h2 class="h2" id="experience">Experience</h2>
+          <div class="experience-list">
+            <div class="experience-item">
+              <div class="experience-item">
+                <h3 class="h3">Technical Lab Assistant</h3>
+                <p class="experience-item">
+                  DePauw University - Greencastle, IN (February 2025 - Present)
+                </p>
+
+                <ul>
+                <li>Guided 30+ students with Java programming, debugging, and best practices, improving completion rates by 25%
+</li>
+                <li>Facilitated weekly software development workshops for 40+ attendees, achieving 92% positive feedback.</li>
+                </ul>
+              </div>
+              
+              <div class="experience-item">
+                <h3 class="h3">Software Engineer Intern</h3>
+                <p class="experience-item">
+                  Khoi Nguyen Academy - Da Nang, Vietnam (May 2024 - August 2024)
+                </p>
+              
+                <ul>
+                <li>Collaborated with other software engineers to develop a responsive educational platform using HTML, CSS, and JavaScript.</li>
+                <li>Improved accessibility by 20% and enhanced user experience for students and instructors.</li>
+                <li>Implemented real-time updates for homework and exams, boosting user engagement by 30% for 300+ users.</li>
+                </ul>
+              </div>
+
+              <div class="experience-item">
+                <h3 class="h3">Computer Science Teaching Assistant</h3>
+                <p class="experience-text">Khoi Nguyen Academy, Da Nang, Vietnam (May 2023 - August 2023)</p>
+                <ul>
+                  <li>Assisted in developing and delivering curriculum for intro programming courses using Python and Java.</li>
+                  <li>Mentored over 30 students, helping them overcome coding challenges and core CS concepts.</li>
+                  <li>Collaborated with instructors to create and grade assignments and projects.</li>
+                </ul>
+              </div>
+              <div class="experience-item">
+                <h3 class="h3">Science Researcher</h3>
+                <p class="experience-text">Le Quy Don High School for The Gifted, Da Nang, Vietnam (May 2020 - May 2022)</p>
+                <ul>
+                  <li>Topic: The superiority of BSAP in early diagnosis of bone abnormalities in patients with chronic kidney disease.</li>
+                  <li>Worked with an expert to prove that BSAP is superior to ordinary bone tests (CTx, P1NP) in patients with chronic kidney disease to accurately detect bone metabolism, shorten follow-up time, and reduce monitoring and treatment costs for patients with chronic kidney disease.</li>
+                </ul>
+              </div>
+            <div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section class="education">
+        <div class="container">
+          <h2 class="h2" id="education">Education</h2>
+          <div class="education-item">
+            <h3 class="h3">DePauw University</h3>
+            <p class="education-text">Bachelor of Arts, Double Major in Computer Science and Mathematics (Expected: May 2026) - GPA: 3.76/4.0</p>
+            <ul>
+              <li>Relevant Coursework: Object-Oriented Programming, Data Structures, Computer Systems, Mobile Development, Database and File Systems, Foundations of Computation, Differential Equations, Real Analysis, Linear Algebra, Intro to Statistical Computing, Foundation of Advanced Mathematics, Calculus III, Calculus II, Calculus I</li>
+              <li>Awards: Dean's List Recipient (Fall 2022, Spring 2023, Spring 2024, Fall 2024)</li>
+            </ul>
+          </div>
+          <div class="education-item">
+            <h3 class="h3">Le Quy Don High School for The Gifted</h3>
+            <p class="education-text">Specialization in Advanced Biology (2019 - 2022) - GPA: 9.3/10</p>
+            <ul>
+              <li>Awards: 1st Place and 2nd Place in High School Science and Engineering Competition, Da Nang</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Activities Section -->
+      <section class="activities">
+        <div class="container">
+          <h2 class="h2" id="activities">Activities</h2>
+          <div class="activities-item">
+            <h3 class="h3">Internal Vice-President, Vietnamese Student Association</h3>
+            <p class="activities-text">DePauw University (May 2023 - May 2024)</p>
+            <ul>
+              <li>Coordinated over 8 multicultural events, attracting more than 500 attendees, promoting intercultural awareness.</li>
+              <li>Managed financial operations, led fundraising initiatives, and drove 30% membership expansion.</li>
+            </ul>
+          </div>
+          <div class="activities-item">
+            <h3 class="h3">Head of Media, DePauw Maths Club</h3>
+            <p class="activities-text">DePauw University (March 2023 - December 2024)</p>
+            <ul>
+              <li>Led the media strategy for DePauw Math Club, enhancing the visibility of the club through social media platforms.</li>
+              <li>Designed and implemented marketing campaigns to increase membership and engagement.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="skills">
+        <div class="container">
+          <h2 class="h2" id="skills">Technical Skills</h2>
+          <div class="skills-imgs">
+            <img src="assets/images/skills/java.webp" alt="Java" class="skills-img" loading="lazy" title="Java">
+            <img src="assets/images/skills/python.webp" alt="Python" class="skills-img" loading="lazy" title="Python">
+            <img src="assets/images/skills/c++.webp" alt="C++" class="skills-img" loading="lazy" title="C++">
+            <img src="assets/images/skills/html.webp" alt="HTML" class="skills-img" loading="lazy" title="HTML">
+            <img src="assets/images/skills/css.webp" alt="CSS" class="skills-img" loading="lazy" title="CSS">
+            <img src="assets/images/skills/js.webp" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript">
+            <img src="assets/images/skills/sql.png" alt="SQL" class="skills-img" loading="lazy" title="SQL">
+            <img src="assets/images/skills/r.png" alt="R" class="skills-img" loading="lazy" title="R">
+            <!-- Add frameworks and tools -->
+            <img src="assets/images/skills/node.png" alt="Node.js" class="skills-img" loading="lazy" title="Node.js">
+            <img src="assets/images/skills/rstudio.png" alt="RStudio" class="skills-img" loading="lazy" title="RStudio">
+            <img src="assets/images/skills/github.png" alt="GitHub" class="skills-img" loading="lazy" title="GitHub">
+            <img src="assets/images/skills/react.webp" alt="React" class="skills-img" loading="lazy" title="React">
+            <img src="assets/images/skills/wordpress.webp" alt="WordPress" class="skills-img" loading="lazy" title="WordPress">
+            <img src="assets/images/skills/git.webp" alt="Git" class="skills-img" loading="lazy" title="Git">
+            <img src="assets/images/skills/intellij.webp" alt="IntelliJ IDEA" class="skills-img" loading="lazy" title="IntelliJ IDEA">
+            <img src="assets/images/skills/replit.png" alt="Replit" class="skills-img" loading="lazy" title="Replit">
+            <img src="assets/images/skills/eclipse.png" alt="Eclipse" class="skills-img" loading="lazy" title="Eclipse">
+            <img src="assets/images/skills/vscode.webp" alt="Visual Studio Code" class="skills-img" loading="lazy" title="Visual Studio Code">
+            <img src="assets/images/skills/bluej.webp" alt="BlueJ" class="skills-img" loading="lazy" title="BlueJ">
+            <img src="assets/images/skills/word.png" alt="Microsoft Words" class="skills-img" loading="lazy" title="Microsoft Words">
+            <img src="assets/images/skills/excel.png" alt="Microsoft Excel" class="skills-img" loading="lazy" title="Microsoft Excel">
+            <img src="assets/images/skills/pp.png" alt="Microsoft PowerPoint" class="skills-img" loading="lazy" title="Microsoft PowerPoint">
+            <img src="assets/images/skills/outlook.png" alt="Microsoft Outlook" class="skills-img" loading="lazy" title="Microsoft Outlook">
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <h2 class="h2" id="contact">Send Message</h2>
+          <div class="contact-content">
+            <div class="contact-textbox">
+              <strong href="#" class="hire-alert">
+                <span class="indicator"></span>
+                Seeking for Internship
+              </strong>
+              <p class="contact-text">
+                I am passionate about building web and app interfaces, solving complex challenges, and improving user experiences.
+              </p>
+              <p class="contact-text">
+                Let's connect!.
+              </p>
+            </div>
+            <form action="#" class="contact-form" netlify>
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required inputmode="email" />
+              </div>
+              
+              <button type="submit" class="btn btn-cta">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <nav>
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="LinkedIn" href="https://www.linkedin.com/in/nguyenthaobui04" target="_blank" rel="noopener">
+                  <img loading="lazy" src="assets/images/social-links/linkedin.svg" alt="LinkedIn" />
+                </a>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
